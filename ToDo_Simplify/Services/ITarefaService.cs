@@ -4,10 +4,9 @@ namespace ToDo_Simplify.Services;
 
 public interface ITarefaService
 {
-    Task<IEnumerable<TarefaReadDTO>> GetAllTarefas();
-    Task<TarefaReadDTO> GetTarefaById(int id);
-    Task<TarefaReadDTO> CreateTarefa(TarefaDTO tarefaDto);
-    Task<bool> UpdateTarefa(int id, TarefaDTO tarefaDto);
+    Task<IEnumerable<TarefaDTO>> GetAllTarefas();
+    Task<TarefaDTO> GetTarefaById(int id);
+    Task<TarefaDTO> CreateTarefa(TarefaDTO tarefaDTO);
+    Task<bool> UpdateTarefa(int id, TarefaDTO tarefaDTO);
     Task<bool> DeleteTarefa(int id);
-    
 }
